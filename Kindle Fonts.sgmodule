@@ -1,7 +1,7 @@
 #!name=Kindle Fonts
 #!desc=自定义Kindel字体
 #!category=Utilities
-#别玩了开启路由器ftp允许匿名登入选项
+#别忘了开启路由器ftp允许匿名登入选项
 
 [URL Rewrite]
 #中国区
