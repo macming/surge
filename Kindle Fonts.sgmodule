@@ -1,0 +1,26 @@
+#!name=Kindle Fonts
+#!desc=自定义Kindel字体
+#!system=ios
+#!category=Utilities
+
+[URL Rewrite]
+#中国区
+#^https://s3.cn-north-1.amazonaws.com.cn/maes-appexpan-protected-prod/STFontSC/STSongSC.ttf.+ ftp://192.168.50.1//CZ880/data/STSongSC.ttf 302
+
+#美国区
+#繁体-霞鶩文楷TC->黑体
+#^https://s3.amazonaws.com/maes-appexpan-protected-prod/TCFonts_IOS/3/STHeitiTC.ttf.+ ftp://192.168.50.1//CZ74/Backup/Fonts/STHeitiTC.ttf 302
+
+#简体-霞鶩文楷->黑体
+#https://s3.amazonaws.com/maes-appexpan-protected-prod/STFontSC/STHeitiSC.ttf.+ ftp://192.168.50.1//CZ74/Backup/Fonts/STHeitiSC.ttf 302
+
+#简体-霞鶩文楷->宋体
+^https://s3.amazonaws.com/maes-appexpan-protected-prod/STFontSC/STSongSC.ttf.+ ftp://192.168.50.1//CZ74/Backup/Fonts/STSongSC.ttf 302
+
+[MITM]
+
+#中国区
+#hostname = %APPEND% s3.cn-north-1.amazonaws.com.cn
+
+#美国区
+hostname = %APPEND% s3.amazonaws.com
